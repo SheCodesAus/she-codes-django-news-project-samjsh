@@ -5,6 +5,7 @@ from .forms import StoryForm
 
 class IndexView(generic.ListView):
     template_name = 'news/index.html'
+    context_object_name = "all_stories" #this has been added, but ask if this makes the context['all_stories'] redundant?
 
     def get_queryset(self):
         '''Return all news stories.'''

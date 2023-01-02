@@ -13,7 +13,7 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
-    image_url = models.URLField(blank = True) #new addition from 'image_url'
+    image_url = models.URLField(blank=True) #new addition from 'image_url'
 
 
     #add image function here and then add some 'logic' of the info related to images in 'views.py'
